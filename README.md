@@ -41,8 +41,7 @@ let id = NetId64::make(1, 7, 42);
 println!("{}", id); // 1:7:42
 assert_eq!(id.node(), 7);
 assert_eq!(id.counter(), 42);
-
-
+```
 
 ---
 
