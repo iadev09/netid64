@@ -1,0 +1,17 @@
+[package]
+name = "netid64"
+version = "0.1.0"
+edition = "2024"
+description = "64-bit network-scoped ID (K|NODE|CTR): 8b kind, 16b node, 40b counter. BE wire."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/iadev09/netid64"
+keywords = ["id", "u64", "net", "protocol", "quic"]
+categories = ["network-programming", "data-structures", "no-std"]
+
+[features]
+default = ["std"]
+std = []
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
