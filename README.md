@@ -3,7 +3,8 @@
 [![Rust Crate](https://img.shields.io/crates/v/netid64?label=Rust%20Crate)](https://crates.io/crates/netid64)
 [![API](https://img.shields.io/docsrs/netid64?label=API)](https://docs.rs/netid64)
 
-`netid64` provides one type: `NetId64`.
+Provides `NetId64`: "valid for life", as long as the runtime that
+minted it runs.
 
 It is a fixed-layout `u64` identifier intended for protocols and
 runtime substrates that need a compact, inspectable id.
